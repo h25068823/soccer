@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: green;
+            overflow: hidden;
+        }
+
+        .centerLine {
+            margin: 0 auto;
+            background-color: white;
+            color: white;
+            width: 10px;
+            height: 100vh;
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            z-index: 10;
+        }
+
+        .centercircle {
+            margin: 0 auto;
+            background-color: green;
+            color: white;
+            width: 300px;
+            height: 300px;
+            border-radius: 170px;
+            position: absolute;
+            top: 200px;
+            left: 39%;
+        }
+
+        .leftsquare {
+            background-color: green;
+            color: white;
+            width: 180px;
+            height: 45vh;
+            position: absolute;
+            top: 190px;
+            left: 0;
+            z-index: -1;
+        }
+
+        .rightsquare {
+            background-color: green;
+            color: white;
+            width: 180px;
+            height: 45vh;
+            position: absolute;
+            top: 190px;
+            right: 0;
+            z-index: -1;
+        }
+
+        .flex {
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+            width: 20%;
+            height: 100vh;
+
+            z-index: 10;
+        }
+
+
+        .flex>div {
+            margin: 15px;
+        }
+
+        img {
+            border-radius: 80px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .name {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .stars {
+            color: yellow;
+            text-align: center;
+        }
+
+        .goal {
+            color: white;
+            text-align: center;
+        }
+
+        .flex {
+            width: 10%;
+        }
+
+        .leftPlayer {
+            display: flex;
+        }
+
+        .rightplayer {
+            display: flex;
+        }
+
+        .rightzone {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0px;
+            left: 50%;
+        }
+
+        .flex>div:hover {
+            filter: opacity(50%);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="leftZone">
+        <div style="border:20px solid white" class="leftsquare"></div>
+
+        <div class="leftPlayer">
+            <div class="flex">
+                <div>
+                    <div
+                        onclick="location.href='https://www.google.com/search?q=%EC%9D%B4%EC%9A%B4%EC%9E%AC+%ED%94%84%EB%A1%9C%ED%95%84&sca_esv=567951771&sxsrf=AM9HkKn_tgL_hQ1LLtw8hXCZqSU_B_t4zw%3A1695539358438&ei=nuAPZaWLGv7m2roPwrWOoAg&ved=0ahUKEwil0qWp2MKBAxV-s1YBHcKaA4QQ4dUDCBA&uact=5&oq=%EC%9D%B4%EC%9A%B4%EC%9E%AC+%ED%94%84%EB%A1%9C%ED%95%84&gs_lp=Egxnd3Mtd2l6LXNlcnAiE-ydtOyatOyerCDtlITroZztlYQyBhAAGB4YD0iKG1DOBljAFnADeAGQAQGYAe0BoAHiDaoBBTAuNy4zuAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICBhAAGAcYHsICBxAAGIoFGEPCAgUQABiABMICCBAAGAcYHhgPwgIHEAAYDRiABOIDBBgAIEGIBgGQBgo&sclient=gws-wiz-serp'">
+                        <img src="./img/img (8).jpg" alt="">
+                    </div>
+                    <div class="name">lee</div>
+                    <div class="stars">7.6</div>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div>
+                    <div
+                        onclick="location.href='https://www.google.com/search?q=%EA%B0%95%EC%83%81%EC%9A%B0+%ED%94%84%EB%A1%9C%ED%95%84&sca_esv=567951771&sxsrf=AM9HkKluCQvpYf-_c06Cjdrc7b8xDFhF5g%3A1695539461268&ei=BeEPZb76D5ba-QaXh6-YDQ&ved=0ahUKEwj-kKra2MKBAxUWbd4KHZfDC9MQ4dUDCBA&uact=5&oq=%EA%B0%95%EC%83%81%EC%9A%B0+%ED%94%84%EB%A1%9C%ED%95%84&gs_lp=Egxnd3Mtd2l6LXNlcnAiE-qwleyDgeyasCDtlITroZztlYQyBhAAGB4YD0i5B1DmBVjmBXABeAGQAQCYAYIBoAGCAaoBAzAuMbgBA8gBAPgBAcICChAAGEcY1gQYsAPiAwQYACBBiAYBkAYK&sclient=gws-wiz-serp'">
+                        <img src="./img/img (11).webp" alt="">
+                    </div>
+                    <div class="name">kang</div>
+                    <div class="stars">6.8</div>
+                </div>
+
+                <div>
+                    <div
+                        onclick="location.href='https://www.google.com/search?q=%EA%B9%80%EC%98%81%EA%B6%8C+%ED%94%84%EB%A1%9C%ED%95%84&sca_esv=567951771&sxsrf=AM9HkKmlw5nQkkwcDJCAC8SMACYuoABlhw%3A1695539465756&ei=CeEPZarlLcrt1e8Pgb65oAg&ved=0ahUKEwjqjbzc2MKBAxXKdvUHHQFfDoQQ4dUDCBA&uact=5&oq=%EA%B9%80%EC%98%81%EA%B6%8C+%ED%94%84%EB%A1%9C%ED%95%84&gs_lp=Egxnd3Mtd2l6LXNlcnAiE-q5gOyYgeq2jCDtlITroZztlYQyCBAhGKABGMMESIIpUIUFWIEncAJ4AZABAJgB1wGgAbMQqgEGMC4xMy4xuAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICBxAAGA0YgATCAgYQABgHGB7CAgcQABiKBRhDwgIFEAAYgATCAgUQABiiBOIDBBgAIEGIBgGQBgE&sclient=gws-wiz-serp'">
+                        <img src="./img/img (4).jpg" alt="">
+                    </div>
+                    <div class="name">kim</div>
+                    <div class="stars">7.1</div>
+                </div>
+
+                <div>
+                    <div
+                        onclick="location.href='https://www.google.com/search?q=%EA%B9%80%EB%AF%BC%EC%9E%AC+%ED%94%84%EB%A1%9C%ED%95%84&sca_esv=567951771&sxsrf=AM9HkKl9AGdWTLvaSYp-mV8P6s9LBsLO4w%3A1695539490887&ei=IuEPZeXgNeTL1e8P6tKL2Ac&ved=0ahUKEwjl-bno2MKBAxXkZfUHHWrpAnsQ4dUDCBA&uact=5&oq=%EA%B9%80%EB%AF%BC%EC%9E%AC+%ED%94%84%EB%A1%9C%ED%95%84&gs_lp=Egxnd3Mtd2l6LXNlcnAiE-q5gOuvvOyerCDtlITroZztlYQyBxAjGIoFGCcyBRAAGIAESMcgUNsJWP8ecAN4AZABAZgB0AGgAcMMqgEFMC44LjK4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIGEAAYBxgewgIHEAAYigUYQ-IDBBgAIEGIBgGQBgo&sclient=gws-wiz-serp'">
+                        <img src="./img/img (7).jpg" alt="">
+                    </div>
+                    <div class="name">kim</div>
+                    <div class="stars">7.8</div>
+                </div>
+
+                <div>
+                    <div
+                        onclick="location.href='https://www.google.com/search?q=%EC%B0%A8%EB%91%90%EB%A6%AC+%ED%94%84%EB%A1%9C%ED%95%84&sca_esv=567951771&sxsrf=AM9HkKnI5Xp2RVIOB47rlUI7gItw8twqpA%3A1695538948946&ei=BN8PZY6uOfDr1e8Po--AyAU&ved=0ahUKEwiOwITm1sKBAxXwdfUHHaM3AFkQ4dUDCBA&uact=5&oq=%EC%B0%A8%EB%91%90%EB%A6%AC+%ED%94%84%EB%A1%9C%ED%95%84&gs_lp=Egxnd3Mtd2l6LXNlcnAiE-ywqOuRkOumrCDtlITroZztlYRI2Q5Q6gVYkg1wAngBkAEBmAHaAaABtweqAQUwLjUuMbgBA8gBAPgBAcICChAAGEcY1gQYsAPCAgYQABgHGB7CAgcQABgNGIAEwgIIEAAYBRgeGA3iAwQYACBBiAYBkAYK&sclient=gws-wiz-serp'">
+                        <img src="./img/img (5).jpg" alt="">
+                    </div>
+                    <div class="name">cha</div>
+                    <div class="stars">6.5</div>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div>
+                    <div
+                        onclick="location.href='https://www.google.com/search?q=%EA%B8%B0%EC%84%B1%EC%9A%A9+%ED%94%84%EB%A1%9C%ED%95%84&oq=%EA%B8%B0%EC%84%B1%EC%9A%A9+%ED%94%84%EB%A1%9C%ED%95%84&aqs=chrome..69i57j0i13i15i30j0i5i13i15i30j69i60.9324j0j15&sourceid=chrome&ie=UTF-8'">
+                        <img src="./img/img (7).webp" alt="">
+                    </div>
+                    <div class="name">ki</div>
+                    <div class="stars">5.9</div>
+                </div>
+                <div>
+                    <div
+                        onclick="location.href='https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=%EC%9C%A0%EC%83%81%EC%B2%A0+%ED%94%84%EB%A1%9C%ED%95%84&oquery=%EC%86%90%ED%9D%A5%EB%AF%BC+%ED%94%84%EB%A1%9C%ED%95%84&tqi=idj3alp0JXVssMvfDx0ssssssSG-083697'">
+                        <img src="./img/img (8).webp" alt="">
+                    </div>
+                    <div class="name">yu</div>
+                    <div class="stars">7.4</div>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div>
+                    <div
+                        onclick="location.href='https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bjky&x_csa=%7B%22fromUi%22%3A%22kb_sports%22%7D&pkid=1&os=175558&qvt=0&query=%EC%86%90%ED%9D%A5%EB%AF%BC%20%ED%94%84%EB%A1%9C%ED%95%84'">
+                        <img src="./img/img (2).webp" alt="">
+                    </div>
+                    <div class="name">son</div>
+                    <div class="stars">7.1</div>
+                    <div class="goal">⚽︎</div>
+                </div>
+                <div>
+                    <div
+                        onclick="location.href='https://www.google.com/search?q=%EC%9D%B4%EA%B0%95%EC%9D%B8+%ED%94%84%EB%A1%9C%ED%95%84&sca_esv=566039705&sxsrf=AM9HkKkIL0F_0i8sVI1p1AHpOyOg6gtihg%3A1694939250415&ei=crgGZfX5GMPY-QbX94LYBw&ved=0ahUKEwj1-r7fnLGBAxVDbN4KHde7AHsQ4dUDCBA&uact=5&oq=%EC%9D%B4%EA%B0%95%EC%9D%B8+%ED%94%84%EB%A1%9C%ED%95%84&gs_lp=Egxnd3Mtd2l6LXNlcnAiE-ydtOqwleyduCDtlITroZztlYQyBRAAGIAEMgUQABiABDIGEAAYBxgeMgYQABgFGB5I0SxQqxRYuitwAngBkAEAmAG0AaAB3AqqAQMzLji4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIIEAAYBxgeGA_CAgoQABgFGAcYHhgPwgIHEAAYigUYQ8ICBRAAGKIEwgIIEAAYiQUYogTCAggQABgIGAcYHsICCBAAGAUYBxgewgIHEAAYDRiABMICCBAAGAgYHhgNwgIIEAAYBRgeGA3iAwQYACBBiAYBkAYK&sclient=gws-wiz-serp'">
+                        <img src="./img/img (12).webp" alt="">
+                    </div>
+                    <div class="name">lee</div>
+                    <div class="stars">★7.9</div>
+                    <div class="goal">⚽︎⚽︎</div>
+                </div>
+                <div>
+                    <div
+                        onclick="location.href='https://www.google.com/search?q=%EB%B0%95%EC%A7%80%EC%84%B1+%ED%94%84%EB%A1%9C%ED%95%84&oq=%EB%B0%95%EC%A7%80%EC%84%B1+%ED%94%84%EB%A1%9C%ED%95%84&aqs=chrome..69i57j0i5i13i30j0i5i13i15i30.7118j0j15&sourceid=chrome&ie=UTF-8'">
+                        <img src="./img/img (6).jpg" alt="">
+                    </div>
+                    <div class="name">park</div>
+                    <div class="stars">7.4</div>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div>
+                    <div
+                        onclick="location.href='https://www.google.com/search?q=%EC%B0%A8%EB%B2%94%EA%B7%BC+%ED%94%84%EB%A1%9C%ED%95%84&oq=%EC%B0%A8%EB%B2%94%EA%B7%BC+%ED%94%84%EB%A1%9C%ED%95%84&aqs=chrome..69i57.12028j0j15&sourceid=chrome&ie=UTF-8'">
+                        <img src="./img/img (9).webp" alt="">
+                    </div>
+                    <div class="name">cha</div>
+                    <div class="stars">7.5</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="centerLine"></div>
+    <div style="border:20px solid white" class="centercircle"></div>
+
+
+    <div style="border: 20px solid white;" class="rightsquare"></div>
+    <div class="rightzone">
+        <div class="rightplayer">
+            <div class="flex">
+                <div>
+                    <div
+                        onclick="location.href='https://www.google.com/search?q=%EC%BC%80%EC%9D%B8+%ED%94%84%EB%A1%9C%ED%95%84&sca_esv=567951771&sxsrf=AM9HkKmwSlOALeLEyUrYI17fAIWVPzOVLQ%3A1695539553063&ei=YeEPZfPCA7Cm1e8Pgoqt0Ag&ved=0ahUKEwiz94yG2cKBAxUwU_UHHQJFC4oQ4dUDCBA&uact=5&oq=%EC%BC%80%EC%9D%B8+%ED%94%84%EB%A1%9C%ED%95%84&gs_lp=Egxnd3Mtd2l6LXNlcnAiEOy8gOyduCDtlITroZztlYQyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yDRAAGAcYHhgPGPEEGApInhVQiQZYjxRwAngBkAEBmAGlAaAB6geqAQMwLje4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIHEAAYigUYQ8ICBRAAGIAE4gMEGAAgQYgGAZAGCg&sclient=gws-wiz-serp'">
+                        <img src="./img/img (3).webp">
+                    </div>
+                    <div class="name">kane</div>
+                    <div class="stars">7.6</div>
+                    <div class="goal">⚽︎</div>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div>
+                    <div
+                        onclick="location.href='https://www.google.com/search?q=%ED%95%98%EB%B9%84+%EB%B0%98%EC%8A%A4+%ED%94%84%EB%A1%9C%ED%95%84&sca_esv=567951771&sxsrf=AM9HkKl4QqdDbnwvOMsbw-_1dUt5rnPw7w%3A1695539591705&ei=h-EPZf7HKobo-Aa_1LXwCQ&ved=0ahUKEwi-p8OY2cKBAxUGNN4KHT9qDZ4Q4dUDCBA&uact=5&oq=%ED%95%98%EB%B9%84+%EB%B0%98%EC%8A%A4+%ED%94%84%EB%A1%9C%ED%95%84&gs_lp=Egxnd3Mtd2l6LXNlcnAiF-2VmOu5hCDrsJjsiqQg7ZSE66Gc7ZWEMgUQABiiBEj_I1DyDljXInACeAGQAQGYAfMBoAG7DqoBBjAuMTEuMbgBA8gBAPgBAcICChAAGEcY1gQYsAPCAgYQABgHGB7CAg0QABgHGB4YDxjxBBgKwgIHEAAYigUYQ8ICBRAAGIAE4gMEGAAgQYgGAZAGCg&sclient=gws-wiz-serp'">
+                        <img src="./img/img (4).webp" alt="">
+                    </div>
+                    <div class="name">bans</div>
+                    <div class="stars">6.8</div>
+                </div>
+                <div>
+                    <div
+                        onclick="location.href='https://www.google.com/search?q=%EC%A0%9C%EB%9D%BC%EB%93%9C+%ED%94%84%EB%A1%9C%ED%95%84&sca_esv=567951771&sxsrf=AM9HkKlsRFMd1Kxb-fciZK0iUtd-pMETzQ%3A1695539718928&ei=BuIPZb74N83u2roPtJWugAo&ved=0ahUKEwi-k5jV2cKBAxVNt1YBHbSKC6AQ4dUDCBA&uact=5&oq=%EC%A0%9C%EB%9D%BC%EB%93%9C+%ED%94%84%EB%A1%9C%ED%95%84&gs_lp=Egxnd3Mtd2l6LXNlcnAiE-ygnOudvOuTnCDtlITroZztlYQyBhAAGB4YD0iUFVC1BViHE3ACeACQAQGYAe0BoAH-DaoBBTEuOS4yuAEDyAEA-AEBwgIIEAAYogQYsAPCAgcQABiKBRhDwgIFEAAYgATCAgYQABgHGB7iAwQYASBBiAYBkAYB&sclient=gws-wiz-serp'">
+                        <img src="img/img (3).jpg" alt="">
+                    </div>
+                    <div class="name">gerrad</div>
+                    <div class="stars">7.1</div>
+                </div>
+                <div>
+                    <div
+                        onclick="location.href='https://www.google.com/search?q=%EB%A7%88%EC%9A%B4%ED%8A%B8+%ED%94%84%EB%A1%9C%ED%95%84&sca_esv=567951771&sxsrf=AM9HkKlacyvh7Bx4cU18fKJpk1_aRrBh7Q%3A1695539741468&ei=HeIPZYSNHOap2roPvICUwAM&ved=0ahUKEwjEj_jf2cKBAxXmlFYBHTwABTgQ4dUDCBA&uact=5&oq=%EB%A7%88%EC%9A%B4%ED%8A%B8+%ED%94%84%EB%A1%9C%ED%95%84&gs_lp=Egxnd3Mtd2l6LXNlcnAiE-uniOyatO2KuCDtlITroZztlYQyBhAAGAgYHkjzH1DMDljBHnACeAGQAQGYAc0BoAH2C6oBBTAuOS4xuAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICBxAAGIoFGEPCAgUQABiABMICBhAAGAcYHsICCBAAGAgYBxge4gMEGAAgQYgGAZAGCg&sclient=gws-wiz-serp'">
+                        <img src="./img/img (13).webp" alt="">
+                    </div>
+                    <div class="name">maunt</div>
+                    <div class="stars">7.8</div>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div>
+                    <div
+                        onclick="location.href='https://www.google.com/search?q=%EC%A1%B0%EB%8D%98+%ED%95%B8%EB%8D%94%EC%8A%A8+%ED%94%84%EB%A1%9C%ED%95%84&sca_esv=567951771&sxsrf=AM9HkKlhugExPxRW9RfkUDb6uD_ExKFW0w%3A1695539765264&ei=NeIPZYnaD7iy2roPpum0sAg&ved=0ahUKEwjJyKTr2cKBAxU4mVYBHaY0DYYQ4dUDCBA&uact=5&oq=%EC%A1%B0%EB%8D%98+%ED%95%B8%EB%8D%94%EC%8A%A8+%ED%94%84%EB%A1%9C%ED%95%84&gs_lp=Egxnd3Mtd2l6LXNlcnAiGuyhsOuNmCDtlbjrjZTsiqgg7ZSE66Gc7ZWEMgUQABiiBDIFEAAYogQyBRAAGKIESLwcUNwEWNkbcAN4AZABApgBywGgAbkSqgEGMC4xNS4xuAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICCBAAGAgYBxgewgIHEAAYigUYQ8ICBRAAGIAEwgIGEAAYBxgewgIIEAAYBxgeGA_CAgYQABgeGA_CAgYQABgFGB7iAwQYACBBiAYBkAYK&sclient=gws-wiz-serp'">
+                        <img src="./img/img (1).webp" alt="">
+                    </div>
+                    <div class="name"> Henderson</div>
+                    <div class="stars">5.9</div>
+                </div>
+
+                <div>
+                    <div
+                        onclick="location.href='https://www.google.com/search?q=%EB%A6%AC%EC%8A%A4+%EC%A0%9C%EC%9E%84%EC%8A%A4+%ED%94%84%EB%A1%9C%ED%95%84&sca_esv=567951771&sxsrf=AM9HkKmctb4epLWzpIwiZDKZuxGg-fUuPw%3A1695539790121&ei=TuIPZezjBqO12roPo6STsAk&ved=0ahUKEwjswpH32cKBAxWjmlYBHSPSBJYQ4dUDCBA&uact=5&oq=%EB%A6%AC%EC%8A%A4+%EC%A0%9C%EC%9E%84%EC%8A%A4+%ED%94%84%EB%A1%9C%ED%95%84&gs_lp=Egxnd3Mtd2l6LXNlcnAiGuumrOyKpCDsoJzsnoTsiqQg7ZSE66Gc7ZWEMgUQABiiBEjqHlDbBFi7HXADeAGQAQOYAfkBoAGeFaoBBjAuMTUuMrgBA8gBAPgBAcICChAAGEcY1gQYsAPCAgcQABiKBRhDwgIFEAAYgATCAgYQABgHGB7iAwQYACBBiAYBkAYK&sclient=gws-wiz-serp'">
+                        <img src="./img/img (5).webp" alt="">
+                    </div>
+                    <div class="name">james</div>
+                    <div class="stars">7.4</div>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div>
+                    <div
+                        onclick="location.href='https://www.google.com/search?q=%EB%A3%A8%ED%81%AC+%EC%87%BC+%ED%94%84%EB%A1%9C%ED%95%84&sca_esv=567951771&sxsrf=AM9HkKnP8p2mEBhgWohFIIxZADgpVZgu9Q%3A1695539811686&ei=Y-IPZZiqKfzd2roP8YWL8Ac&ved=0ahUKEwjY57WB2sKBAxX8rlYBHfHCAn4Q4dUDCBA&uact=5&oq=%EB%A3%A8%ED%81%AC+%EC%87%BC+%ED%94%84%EB%A1%9C%ED%95%84&gs_lp=Egxnd3Mtd2l6LXNlcnAiFOujqO2BrCDsh7wg7ZSE66Gc7ZWEMgUQABiiBDIFEAAYogRI0RpQjwVYzhhwAngBkAEBmAH1AaAB0w-qAQUwLjkuM7gBA8gBAPgBAcICChAAGEcY1gQYsAPCAgcQIxiwAhgnwgIHEAAYigUYQ8ICBRAAGIAEwgIGEAAYBxgewgIIEAAYBxgeGA_CAggQIRigARjDBOIDBBgAIEGIBgGQBgo&sclient=gws-wiz-serp'">
+                        <img src="./img/img (2).jpg" alt="">
+                    </div>
+                    <div class="name">shaw</div>
+                    <div class="stars">7.1</div>
+                </div>
+                <div>
+                    <div
+                        onclick="location.href='https://www.google.com/search?q=%ED%86%A0%EB%AA%A8%EB%A6%AC+%ED%94%84%EB%A1%9C%ED%95%84&sca_esv=567951771&sxsrf=AM9HkKntj4-J_Wy7I56MzSsOe_CuY9XZmA%3A1695539839466&ei=f-IPZbiAHPqD2roPp5SZsAc&ved=0ahUKEwj4u9WO2sKBAxX6gVYBHSdKBnYQ4dUDCBA&uact=5&oq=%ED%86%A0%EB%AA%A8%EB%A6%AC+%ED%94%84%EB%A1%9C%ED%95%84&gs_lp=Egxnd3Mtd2l6LXNlcnAiE-2GoOuqqOumrCDtlITroZztlYQyCBAAGAcYHhgPMgYQABgeGA9IqBZQ_gVY2xRwA3gBkAECmAHVAaABwwuqAQUwLjguMbgBA8gBAPgBAcICChAAGEcY1gQYsAPCAgUQABiiBMICBxAAGIoFGEPCAgUQABiABMICBhAAGAcYHuIDBBgAIEGIBgGQBgo&sclient=gws-wiz-serp'">
+                        <img src="./img/img (1).jpg" alt="">
+                    </div>
+                    <div class="name">tomori</div>
+                    <div class="stars">★7.9</div>
+                </div>
+                <div>
+                    <div
+                        onclick="location.href='https://www.google.com/search?q=%EC%B9%B4%EC%9D%BC+%EC%9B%8C%EC%BB%A4+%ED%94%84%EB%A1%9C%ED%95%84&sca_esv=567951771&sxsrf=AM9HkKmlLH9rj7pxjqOOIayNZskJ2GbEUQ%3A1695539860081&ei=lOIPZZbQBOq02roP6Zq_sAE&ved=0ahUKEwiW6r-Y2sKBAxVqmlYBHWnNDxYQ4dUDCBA&uact=5&oq=%EC%B9%B4%EC%9D%BC+%EC%9B%8C%EC%BB%A4+%ED%94%84%EB%A1%9C%ED%95%84&gs_lp=Egxnd3Mtd2l6LXNlcnAiF-y5tOydvCDsm4zsu6Qg7ZSE66Gc7ZWEMgUQABiiBDIFEAAYogRI-0NQuAVYqkJwB3gBkAECmAHpAaAB9haqAQYwLjE2LjO4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIIEAAYBxgeGA_CAgYQABgeGA_CAgcQABiKBRhDwgIFEAAYgATCAgYQABgHGB7CAggQABiJBRiiBOIDBBgAIEGIBgGQBgo&sclient=gws-wiz-serp'">
+                        <img src="./img/img (6).webp" alt="">
+                    </div>
+                    <div class="name">waker</div>
+                    <div class="stars">7.4</div>
+                </div>
+                <div>
+                    <div
+                        onclick="location.href='https://www.google.com/search?q=%ED%8A%B8%EB%A6%AC%ED%94%BC%EC%96%B4+%ED%94%84%EB%A1%9C%ED%95%84&sca_esv=567951771&sxsrf=AM9HkKkIIq_loIZTvlQx7-pNj161vemUVw%3A1695539890592&ei=suIPZfrTI5zj2roP_9ei0As&ved=0ahUKEwj69IWn2sKBAxWcsVYBHf-rCLoQ4dUDCBA&uact=5&oq=%ED%8A%B8%EB%A6%AC%ED%94%BC%EC%96%B4+%ED%94%84%EB%A1%9C%ED%95%84&gs_lp=Egxnd3Mtd2l6LXNlcnAiFu2KuOumrO2UvOyWtCDtlITroZztlYQyBRAAGKIEMgUQABiiBDIFEAAYogRI6RZQvAVYlxVwBHgBkAEEmAHlAaABuhCqAQYwLjEyLjG4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIHEAAYigUYQ8ICBRAAGIAEwgIGEAAYBxgewgIKEAAYBRgHGB4YD8ICCBAAGIkFGKIE4gMEGAAgQYgGAZAGCg&sclient=gws-wiz-serp'">
+                        <img src="./img/img (10).webp" alt="">
+                    </div>
+                    <div class="name">triper</div>
+                    <div class="stars">7.4</div>
+                </div>
+            </div>
+
+            <div class="flex">
+                <div>
+                    <div
+                        onclick="location.href='https://www.google.com/search?q=%EB%8B%89+%ED%8F%AC%ED%94%84+%ED%94%84%EB%A1%9C%ED%95%84&sca_esv=567951771&sxsrf=AM9HkKkpEE_YP7Ioss8E6XNgYSYFKVnhMQ%3A1695539908333&ei=xOIPZaPuE56D2roPlZ6Y6AI&ved=0ahUKEwij4MCv2sKBAxWegVYBHRUPBi0Q4dUDCBA&uact=5&oq=%EB%8B%89+%ED%8F%AC%ED%94%84+%ED%94%84%EB%A1%9C%ED%95%84&gs_lp=Egxnd3Mtd2l6LXNlcnAiFOuLiSDtj6ztlIQg7ZSE66Gc7ZWEMgUQABiiBDIFEAAYogQyBRAAGKIEMgUQABiiBEiwGVCGBliRGHACeAGQAQGYAbEBoAGZDKoBBDAuMTG4AQPIAQD4AQHCAgoQABhHGNYEGLADwgIIEAAYiQUYogTCAgcQABiKBRhDwgIFEAAYgATCAgYQABgHGB7iAwQYACBBiAYBkAYK&sclient=gws-wiz-serp'">
+                        <img src="./img/img.webp" alt="">
+                    </div>
+                    <div class="name">pope</div>
+                    <div class="stars">7.5</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
